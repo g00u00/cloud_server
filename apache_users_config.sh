@@ -1,10 +1,12 @@
 #!/bin/bash
 
-apt install clamav clamav-daemon
-clamscan -ri  /home
 
 apt install tasksel
 tasksel install lamp-server
+
+
+apt install clamav clamav-daemon
+clamscan -ri  /home
 
 
 echo ""
