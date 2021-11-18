@@ -4,7 +4,9 @@
 apt install tasksel
 tasksel install lamp-server
 
-
+echo ""
+echo "Антивирусник"
+echo "clamscan -ri  /home"
 apt install clamav clamav-daemon
 clamscan -ri  /home
 
