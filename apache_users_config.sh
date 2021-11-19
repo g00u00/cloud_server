@@ -19,8 +19,8 @@ ln -s /usr/share/zoneinfo/Europe/Moscow /etc/localtime
 echo ""
 echo ""
 echo "Копируем и извлекаем конфигурационные файлы "  
-rm -rf apache_users/
-rm apache_users.bz2 
+#rm -rf apache_users/
+#rm apache_users.bz2 
 wget  http://ed.nn2000.info/public_html/unix/DO_Apache_Users/apache_users.bz2
 ls -lAF
 tar -xpf apache_users.bz2
@@ -81,6 +81,7 @@ ufw allow 8003
 ufw allow 8004
 ufw allow 8005
 ufw enable
+ufw disable
 ufw status verbose 
 echo ""
 echo "Рестартуем http-сервер"  
