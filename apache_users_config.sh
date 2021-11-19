@@ -40,7 +40,7 @@ ls -lAF
 
 echo ""
 echo "Настраиваем сервер и открываем порты"  
-cp apache2.conf.conf /etc/apache2/
+cp apache2.conf /etc/apache2/
 cp charset.conf /etc/apache2/conf-enabled/
 cp ports.conf /etc/apache2/
 ls -lAF /etc/apache2/
